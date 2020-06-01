@@ -72,6 +72,8 @@ app.get('/lotto', (req, res) => {
     res.send('Congratulations! You win $100');
   } else if (score === 4) {
     res.send('Congratulations, you win a free ticket');
+  } else if (score === 6) {
+    res.send('Wow! Unbelievable! You could have won the mega millions!');
   } else {
     res.send(`Sorry, you lose ${score}`);
   }
